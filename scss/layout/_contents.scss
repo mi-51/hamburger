@@ -1,0 +1,12 @@
+.l-contents{
+    display: flex;
+    &__main{
+        width: 80%;
+        height: 100vh;
+    }
+    &__aside{
+        width: 20%;
+        background-color: #F2EDE9;
+        height: 100vh;
+    }
+}
