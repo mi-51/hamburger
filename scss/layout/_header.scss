@@ -19,6 +19,8 @@
            height: 46px;
            border-radius: 10px; 
            border: solid 1px #707070;
+           font-size: 1.6rem;
+           font-weight: 500;
         }
         &__button{
             width: 100px;
@@ -27,6 +29,7 @@
             border-radius: 10px;
             border: solid 1px #707070;
             color: #707070;
+            cursor: pointer;
         }
     }
 }

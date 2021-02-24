@@ -158,6 +158,8 @@ input, select {
   height: 46px;
   border-radius: 10px;
   border: solid 1px #707070;
+  font-size: 1.6rem;
+  font-weight: 500;
 }
 
 .l-header__form__button {
@@ -167,5 +169,6 @@ input, select {
   border-radius: 10px;
   border: solid 1px #707070;
   color: #707070;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
