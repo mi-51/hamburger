@@ -10,6 +10,7 @@
 // ====================================
 @import "./layout/contents";
 @import "./layout/header";
+@import "./layout/main";
 @import "./layout/sidebar";
 @import "./layout/footer";
 // ====================================
@@ -19,11 +20,13 @@
 // ====================================
 // component
 // ====================================
-
+@import "./object/component/wrap";
+@import "./object/component/layer";
 // ====================================
 // project
 // ====================================
-
+@import "./object/project/front";
+@import "./object/project/box";
 // ====================================
 // utility
 // ====================================
