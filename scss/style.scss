@@ -22,6 +22,7 @@
 // ====================================
 @import "./object/component/wrap";
 @import "./object/component/layer";
+@import "./object/component/button";
 // ====================================
 // project
 // ====================================
@@ -29,6 +30,8 @@
 @import "./object/project/box";
 @import "./object/project/archive";
 @import "./object/project/pagenation";
+@import "./object/project/article";
+@import "./object/project/picture";
 // ====================================
 // utility
 // ====================================
