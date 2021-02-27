@@ -9,7 +9,9 @@
 </head>
 <body>
     <header>
-
+        <div class="p-bar">
+            <button class="p-bar__button">Menu</button>
+        </div>
     </header>
 
         <div class="l-contents">
@@ -92,6 +94,8 @@
             <aside class="l-contents__right">
 
                 <div class="l-sidebar">
+                    <div class="c-button__close">
+                    </div>
                     <a href="/html/archive.html">Menu</a>
                     <ul>
                         <li><a href="#">バーガー</a>
@@ -138,5 +142,30 @@
             <p> Copyright : RaiseTech</p>
         </footer>
 
+<script src="/jquery-3.5.1.min.js"></script>
+<script>
+
+let timer = 0;
+let currentWidth = window.innerWidth;
+$(window).resize(function(){
+    if (currentWidth == window.innerWidth) {
+        return;
+    }
+    if (timer > 0) {
+        clearTimeout(timer);
+    }
+
+    timer = setTimeout(function () {
+        location.reload();
+    }, 10);
+    
+});
+
+
+    $('.p-bar__button, .c-button__close').click(function(){
+        $('.c-button__close').toggleClass('is-open');
+        $('.l-contents__right').toggleClass('is-open');
+    });
+</script>    
 </body>
 </html>
