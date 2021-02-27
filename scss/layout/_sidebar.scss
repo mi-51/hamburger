@@ -1,12 +1,18 @@
 .l-sidebar{
     padding-left: 46px;
+    @include tab{
+        padding-top: 100px;
+    }
     >a{
         display: block;
         font-size: 34px;
         font-weight: 600;
         color: #707070;
-        padding-top: 82px;
-        padding-bottom: 90px;
+        margin-top: 82px;
+        margin-bottom: 90px;
+        @include tab{
+            display: none;
+        }
     }
     ul{
         li{

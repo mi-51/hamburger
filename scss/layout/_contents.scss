@@ -4,7 +4,9 @@
         width: 80%;
         height: 100%;
         @include tab{
+            position: absolute;
             width: 100%;
+            top: 60px;
         };
     }
     &__right{
@@ -12,7 +14,14 @@
         background-color: #F2EDE9;
         height: inherit;
         @include tab{
-            display: none;
+            position: fixed;
+            overflow-y: scroll;
+            left: 100%;
         };
+        &.is-open{
+            z-index: 200;
+            left: 60%;
+            width: 40%;
+        }
     }
 }

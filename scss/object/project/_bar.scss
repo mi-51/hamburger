@@ -1,0 +1,22 @@
+.p-bar{
+    display: none;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 100;
+    background-color: #fff7ef;
+    text-align: right;
+    &__button{
+        position: absolute;
+        right: 10px;
+        color: #707070;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+        background-color: #fff7ef;
+        border: none;
+    }
+    @include tab{
+        display: block;
+    }
+}
