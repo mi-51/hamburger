@@ -15,7 +15,6 @@
         height: inherit;
         @include tab{
             position: fixed;
-            overflow-y: scroll;
             left: 100%;
         };
         &.is-open{

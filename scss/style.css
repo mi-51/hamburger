@@ -137,7 +137,6 @@ input, select {
 @media (max-width: 1024px) {
   .l-contents__right {
     position: fixed;
-    overflow-y: scroll;
     left: 100%;
   }
 }
