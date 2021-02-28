@@ -1,15 +1,5 @@
 .p-front{
-    &__top{
-        height: 530px;
-        background: url(/img/front_main.jpg) no-repeat;
-        background-size: cover;
-        p{
-            font-size: 40px;
-            color: #fff;
-            padding-left: 86px;
-            padding-top: 259px;
-        }
-    }
+    height: 100%;
     &__flex{
         height: 1500px;
         display: flex;

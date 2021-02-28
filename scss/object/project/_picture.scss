@@ -16,6 +16,10 @@
         p{
             line-height: 1.5;
         }
+        img{
+            object-fit: cover;
+            width: 50%;
+        }
     }
     .top p{
             padding-left: 40px;
@@ -24,8 +28,9 @@
             padding-right: 40px;
     }
     &__half{
-        width: 50%;
+        width: 100%;
         margin: 0 auto;
+        text-align: center;
     }
     &__tile{
         display: flex;

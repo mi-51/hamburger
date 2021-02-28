@@ -1,0 +1,42 @@
+.p-menu-card{
+    display: flex;
+    padding: 0 100px 30px;
+    height: 100%;
+    img{
+        width: 45%;
+        object-fit: cover;
+    }
+    &__intro{
+        background-color: #3C2B1C;
+        padding: 50px 63px;
+        h3{
+            color: #fff;
+            font-size: 36px;
+            font-weight: 500;
+        }
+        h4{
+            color: #fff;
+            font-size: 24px;
+            font-weight: 500;
+            padding-top: 50px;
+        }
+        p{
+            color: #fff;
+            font-size: 16px;
+            padding-top: 20px;
+            padding-bottom: 60px;
+            line-height: 1.6;
+        }
+        a{
+            display: block;
+            width: 60%;
+            color: #707070;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 50px;
+            font-size: 16px;
+            margin: auto;
+            padding: 25px;
+        }
+    }
+}

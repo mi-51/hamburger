@@ -19,30 +19,7 @@
             font-size: 4rem;
         }
     }
-    &__form{
+    &__right{
         margin-right: 1.8rem;
-        &__box{
-           width: 300px;
-           height: 3rem;
-           border-radius: 0.6rem; 
-           border: solid 1px #707070;
-           font-size: 1.6rem;
-           font-weight: 500;
-           @include tab{
-               width: 396px;
-           }
-        }
-        &__button{
-            width: 7rem;
-            height: 3rem;
-            background-color: #F2EDE9;
-            border-radius: 0.6rem;
-            border: solid 1px #707070;
-            color: #707070;
-            cursor: pointer;
-            @include tab{
-                width: 196px;
-            }
-        }
     }
 }
