@@ -120,12 +120,24 @@ input, select {
   height: 100%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .l-main__left {
-    position: absolute;
     width: 100%;
-    top: 60px;
   }
+}
+
+.l-main__left.is-open {
+  position: fixed;
+  overflow-y: auto;
+}
+
+.l-main__left.is-open::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 199;
 }
 
 .l-main__right {
@@ -135,14 +147,16 @@ input, select {
   height: inherit;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .l-main__right {
-    position: fixed;
-    left: 100%;
+    display: none;
   }
 }
 
 .l-main__right.is-open {
+  display: block;
+  position: absolute;
+  top: 0;
   z-index: 200;
   left: 60%;
   width: 40%;
@@ -163,8 +177,9 @@ input, select {
           justify-content: space-between;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .l-header {
+    margin-top: 60px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -178,7 +193,7 @@ input, select {
   margin-left: 3rem;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .l-header__left {
     margin: 0;
   }
@@ -197,7 +212,7 @@ input, select {
   padding-left: 46px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .l-sidebar {
     padding-top: 100px;
   }
@@ -212,7 +227,7 @@ input, select {
   margin-bottom: 90px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .l-sidebar > a {
     display: none;
   }
@@ -716,7 +731,7 @@ input, select {
   border: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .p-bar {
     display: block;
   }
@@ -735,7 +750,7 @@ input, select {
   font-weight: 500;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .p-search-form__box {
     width: 396px;
   }
@@ -751,7 +766,7 @@ input, select {
   cursor: pointer;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .p-search-form__button {
     width: 196px;
   }
@@ -759,7 +774,7 @@ input, select {
 
 .p-mainvisual {
   height: 530px;
-  background: url(/img/front_main.jpg) no-repeat;
+  background: url(/img/front_main.jpg) no-repeat center;
   background-size: cover;
 }
 

@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: space-between;
     @include tab{
+        margin-top: 60px;
         flex-direction: column;
         justify-content: space-around;
     };
