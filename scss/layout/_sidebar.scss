@@ -3,7 +3,7 @@
     @include tab{
         padding-top: 100px;
     }
-    >a{
+    >p{
         display: block;
         font-size: 34px;
         font-weight: 600;
@@ -20,6 +20,9 @@
             font-size: 24px;
             >a{
                 color: #707070;
+                &:hover{
+                    color: #fff;
+                }
             }
             ul{
                 padding-top: 45px;
@@ -27,8 +30,11 @@
                 li{
                     font-size: 20px;
                     padding-bottom: 30px;
-                    a{
+                    >a{
                         color: #707070;
+                        &:hover{
+                            color: #fff;
+                        }
                     }
                 }
             }

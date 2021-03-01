@@ -1,3 +1,29 @@
+@-webkit-keyframes SlideIn {
+  0% {
+    opacity: 0.8;
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes SlideIn {
+  0% {
+    opacity: 0.8;
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 /*
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -154,8 +180,10 @@ input, select {
 }
 
 .l-main__right.is-open {
+  -webkit-animation: SlideIn 0.5s;
+          animation: SlideIn 0.5s;
   display: block;
-  position: absolute;
+  position: relative;
   top: 0;
   z-index: 200;
   left: 60%;
@@ -222,7 +250,7 @@ input, select {
   }
 }
 
-.l-sidebar > a {
+.l-sidebar > p {
   display: block;
   font-size: 34px;
   font-weight: 600;
@@ -232,7 +260,7 @@ input, select {
 }
 
 @media (max-width: 1200px) {
-  .l-sidebar > a {
+  .l-sidebar > p {
     display: none;
   }
 }
@@ -246,6 +274,10 @@ input, select {
   color: #707070;
 }
 
+.l-sidebar ul li > a:hover {
+  color: #fff;
+}
+
 .l-sidebar ul li ul {
   padding-top: 45px;
   padding-left: 20px;
@@ -256,8 +288,12 @@ input, select {
   padding-bottom: 30px;
 }
 
-.l-sidebar ul li ul li a {
+.l-sidebar ul li ul li > a {
   color: #707070;
+}
+
+.l-sidebar ul li ul li > a:hover {
+  color: #fff;
 }
 
 .l-footer {
