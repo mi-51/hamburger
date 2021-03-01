@@ -19,6 +19,9 @@
     }
     &--archivepage, &--searchpage{
         padding: 70px 100px;
+        @include tab{
+            padding: 40px;
+        }
         h4{
             font-size: 36px;
             font-weight: 500;

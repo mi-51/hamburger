@@ -2,23 +2,37 @@
     display: flex;
     padding: 0 100px 30px;
     height: 100%;
+    @include tab{
+        padding: 20px 40px;
+    }
     img{
         width: 45%;
         object-fit: cover;
+        object-position: left;
     }
     &__intro{
         background-color: #3C2B1C;
         padding: 50px 63px;
+        @include tab{
+            padding: 33px;
+        }
         h3{
             color: #fff;
             font-size: 36px;
             font-weight: 500;
+            @include tab{
+                font-size: 20px;
+            }
         }
         h4{
             color: #fff;
             font-size: 24px;
             font-weight: 500;
             padding-top: 50px;
+            @include tab{
+                font-size: 16px;
+                padding-top: 30px;
+            }
         }
         p{
             color: #fff;
@@ -26,6 +40,10 @@
             padding-top: 20px;
             padding-bottom: 60px;
             line-height: 1.6;
+            @include tab{
+                padding-top: 13px;
+                padding-bottom: 45px;
+            }
         }
         a{
             display: block;
