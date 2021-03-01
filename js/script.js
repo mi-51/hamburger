@@ -16,5 +16,5 @@ $(window).resize(function(){
 
 
 $('.p-bar__button, .c-button__close').click(function(){
-    $('.c-button__close, .l-main__right, .l-main__left').toggleClass('is-open');
+    $('.c-button__close, .l-main__right, .l-main__left, .l-main').toggleClass('is-open');
 });
