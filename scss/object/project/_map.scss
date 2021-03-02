@@ -6,9 +6,15 @@
     @include tab{
         height: 500px;
     }
+    @include sp{
+        height: 700px;
+    }
     iframe{
         position: absolute;
         top: -130px;
+        @include sp{
+            top: -50px;
+        }
     }
     &__layer1{
         position: absolute;
@@ -20,21 +26,29 @@
         @include tab{
             width: 0;
         }
+        @include sp{
+            width: 100%;
+             height: 100%;
+        }
     }
     &__layer2{
         position: absolute;
         top: 0;
         width: 55%;
         height: 100%;
-        background-color: rgba(#000, 0.4);
+        background-color: rgba(#000, 0.5);
         z-index: 5;
         @include tab{
             width: 100%;
-            background-color: rgba(#000, 0.7);
+            background-color: rgba(#000, 0.6);
+        }
+        @include sp{
+            height: 50%;
         }
     }
     &__wrap{
         width: 50%;
+        height: 100%;
         position: absolute;
         top: 0;
         z-index: 15;
@@ -43,10 +57,16 @@
             width: 100%;
             padding: 60px;
         }
+        @include sp{
+            padding: 40px;
+        }
         h3{
             color: #fff;
             font-size: 36px;
             font-weight: normal;
+            @include sp{
+                font-size: 30px;
+            }
             &::after{
                 position: absolute;
                 content: "";
@@ -59,6 +79,10 @@
                     top: 160px;
                     left: 70px;
                 }
+                @include sp{
+                    top: 95px;
+                    left: 45px;
+                }
             }
         }
         p{
@@ -66,6 +90,9 @@
             color: #fff;
             line-height: 1.8;
             font-size: 16px;
+            @include sp{
+                padding-top: 45px;
+            }
         }
     }
 }

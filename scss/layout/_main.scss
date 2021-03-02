@@ -37,6 +37,9 @@
             right: 0;
             width: 40%;
             overflow-y: auto;
+            @include sp{
+                width: 80%;
+            }
         }
     }
     &.is-open{

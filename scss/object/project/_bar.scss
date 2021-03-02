@@ -1,22 +1,25 @@
 .p-bar{
-    display: none;
-    width: 100%;
+    width: 0%;
     height: 60px;
     position: fixed;
     z-index: 100;
     background-color: #fff7ef;
     text-align: right;
+    padding-right: 10px;
     &__button{
-        position: absolute;
-        right: 10px;
         color: #707070;
         font-size: 40px;
         font-weight: bold;
         cursor: pointer;
         background-color: #fff7ef;
         border: none;
+        line-height: 60px;
+        padding: 0;
+        @include sp{
+            font-size: 30px;
+        }
     }
     @include tab{
-        display: block;
+        width: 100%;
     }
 }

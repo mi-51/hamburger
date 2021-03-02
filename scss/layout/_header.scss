@@ -18,9 +18,15 @@
         a{
             color: #707070;
             font-size: 4rem;
+            @include sp{
+                font-size: 40px;
+            }
         }
     }
     &__right{
         margin-right: 1.8rem;
+        @include sp{
+            margin: 0 auto;
+        }
     }
 }
