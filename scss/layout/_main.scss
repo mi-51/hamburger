@@ -7,7 +7,7 @@
             width: 100%;
         };
         &.is-open{ 
-            position: fixed;
+            position: relative;
             overflow-y: auto;
             &::before{
                 content: "";
@@ -30,11 +30,13 @@
         &.is-open{
             animation: SlideIn 0.5s;
             display: block;
-            position: relative;
+            position: fixed;
             top: 0;
+            bottom: 0;
             z-index: 200;
-            left: 60%;
+            right: 0;
             width: 40%;
+            overflow-y: auto;
         }
     }
     &.is-open{

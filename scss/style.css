@@ -153,7 +153,7 @@ input, select {
 }
 
 .l-main__left.is-open {
-  position: fixed;
+  position: relative;
   overflow-y: auto;
 }
 
@@ -183,11 +183,13 @@ input, select {
   -webkit-animation: SlideIn 0.5s;
           animation: SlideIn 0.5s;
   display: block;
-  position: relative;
+  position: fixed;
   top: 0;
+  bottom: 0;
   z-index: 200;
-  left: 60%;
+  right: 0;
   width: 40%;
+  overflow-y: auto;
 }
 
 .l-main.is-open {
