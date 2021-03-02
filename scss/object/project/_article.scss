@@ -3,6 +3,9 @@
     @include tab{
         padding: 70px 60px;
     }
+    @include sp{
+        padding: 35px 22px;
+    }
     &__htext{
         *{
             padding: 33px 0;
@@ -32,15 +35,24 @@
         }
         blockquote,p{
             padding: 0 50px;
+            @include sp{
+                padding: 0 20px;
+            }
         }
         blockquote{
             padding-top: 50px;
             line-height: 1.6;
+            @include sp{
+                padding-top: 30px;
+            }
         }
         p{
             padding-bottom: 60px;
             @include tab{
                 padding-top: 60px;
+            }
+            @include sp{
+                padding: 32px 20px;
             }
         }
     }
@@ -48,9 +60,15 @@
         width: 100%;
         padding: 67px;
         font-size: 16px;
+        @include sp{
+            padding: 0;
+        }
         ol{
             line-height: 1.6;
             padding-bottom: 60px;
+            @include sp{
+                padding: 0 20px 30px;
+            }
             li{
                 list-style: decimal;
                 ol{
@@ -60,6 +78,9 @@
         }
         ul{
             line-height: 1.6;
+            @include sp{
+                padding: 0 0 30px;
+            }
             li{
                 ul{
                     padding: 30px 20px;

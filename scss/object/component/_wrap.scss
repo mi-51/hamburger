@@ -27,6 +27,11 @@
                     font-weight: 500;
                     border: solid 1px;
                     text-align: inherit;
+                    &:first-child{
+                        @include sp{
+                            width: 35%;
+                        }
+                    }
                 }
             }
         }

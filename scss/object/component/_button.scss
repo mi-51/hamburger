@@ -2,6 +2,8 @@
     width: 100%;
     padding-bottom: 60px;
     button{
+        width: 100%;
+        text-align: center;
         background-color: #F2EDE9;
         border-radius: 30px;
         a{
@@ -10,6 +12,9 @@
             color: #3C2A10;
             font-size: 16px;
             line-height: 100px;
+            @include sp{
+                width: 100%;
+            }
         }
     }
     &__close{

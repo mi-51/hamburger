@@ -42,12 +42,19 @@
     &--single, &--page{
         position: relative;
         height: 500px;
+        @include sp{
+            height: 225px;
+        }
         h1{
             color: #fff;
             font-size: 60px;
             font-weight: 500;
             padding-left: 86px;
             z-index: 10;
+            @include sp{
+                font-size: 36px;
+                padding-left: 26px;
+            }
         }
     }
     &--single{
