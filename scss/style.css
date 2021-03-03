@@ -1,3 +1,7 @@
+body.is-fixed {
+  overflow: hidden;
+}
+
 @-webkit-keyframes SlideIn {
   0% {
     opacity: 0.8;
