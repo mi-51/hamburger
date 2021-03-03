@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/scss/style.css">
+    <link rel="stylesheet" href="/scss/hamburger.css">
     <title>Hamburger Archive</title>
 </head>
 <body>
@@ -28,14 +28,14 @@
     <main class="l-main">
         <div class="l-main__left">
             <div class="p-contents">
-                <div class="p-mainvisual--search">
+                <div class="p-mainvisual--archive">
                     <div class="p-mainvisual__text">
-                        <h2>Search:</h2>
+                        <h2>Menu:</h2>
                         <p>チーズバーガー</p>
                     </div>
                 </div>
 
-                <div class="p-box--searchpage">
+                <div class="p-box--archivepage">
                     <h4>小見出しが入ります</h4>
                     <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                 </div>
@@ -43,7 +43,7 @@
                 <div class="p-menu-card">
                     <img src="/img/archive_card.png" alt="">
                     <div class="p-menu-card__intro">
-                        <h3>見出しが入ります</h3>
+                        <h3>チーズバーガー</h3>
                         <h4>小見出しが入ります</h4>
                         <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                         <a href="#">詳しく見る</a>
@@ -53,7 +53,7 @@
                 <div class="p-menu-card">
                     <img src="/img/archive_card.png" alt="">
                     <div class="p-menu-card__intro">
-                        <h3>見出しが入ります</h3>
+                        <h3>ダブルチーズバーガー</h3>
                         <h4>小見出しが入ります</h4>
                         <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                         <a href="#">詳しく見る</a>
@@ -63,27 +63,7 @@
                 <div class="p-menu-card">
                     <img src="/img/archive_card.png" alt="">
                     <div class="p-menu-card__intro">
-                        <h3>見出しが入ります</h3>
-                        <h4>小見出しが入ります</h4>
-                        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                        <a href="#">詳しく見る</a>
-                    </div>
-                </div>
-
-                <div class="p-menu-card">
-                    <img src="/img/archive_card.png" alt="">
-                    <div class="p-menu-card__intro">
-                        <h3>見出しが入ります</h3>
-                        <h4>小見出しが入ります</h4>
-                        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                        <a href="#">詳しく見る</a>
-                    </div>
-                </div>
-
-                <div class="p-menu-card">
-                    <img src="/img/archive_card.png" alt="">
-                    <div class="p-menu-card__intro">
-                        <h3>見出しが入ります</h3>
+                        <h3>スペシャルチーズバーガー</h3>
                         <h4>小見出しが入ります</h4>
                         <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                         <a href="#">詳しく見る</a>
@@ -112,16 +92,14 @@
         </div>
 
         <aside class="l-main__right">
-
             <div class="l-sidebar">
-                <div class="c-button__close">
-                </div>
+                <div class="c-button__close"></div>
                 <p>Menu</p>
                 <ul>
                     <li><a href="#">バーガー</a>
                         <ul>
-                            <li><a href="/html/single.html">ハンバーガー</a></li>
-                            <li><a href="#">チーズバーガー</a></li>
+                            <li><a href="#">ハンバーガー</a></li>
+                            <li><a href="/html/single.html">チーズバーガー</a></li>
                             <li><a href="#">テリヤキバーガー</a></li>
                             <li><a href="#">アボカドバーガー</a></li>
                             <li><a href="#">フィッシュバーガー</a></li>
@@ -157,7 +135,7 @@
     <footer class="l-footer">
         <div class="l-footer__section">
             <a href="/html/page.html">ショップ情報</a>
-            <a href="/html/page.html">ヒストリー</a>
+            <a href="#">ヒストリー</a>
         </div>
         <p> 
             <small>Copyright : RaiseTech</small>
@@ -166,6 +144,6 @@
 
     <script src="/js/jquery-3.5.1.min.js"></script>
     <script src="/js/script.js"></script>
-    
+
 </body>
 </html>

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/scss/style.css">
-    <title>Hamburger Single</title>
+    <link rel="stylesheet" href="/scss/hamburger.css">
+    <title>Hamburger Page</title>
 </head>
 <body>
     <header class="l-header">
@@ -28,8 +28,8 @@
     <main class="l-main">
         <div class="l-main__left">
             <div class="p-contents">
-                <div class="p-mainvisual--single">
-                    <h1>h1チーズバーガー</h1>
+                <div class="p-mainvisual--page">
+                    <h1>ショップについて</h1>
                 </div>
 
                 <div class="p-article">
@@ -52,10 +52,10 @@
                         </div>
                         <div class="p-picture__column top">
                             <img src="/img/cooked-foods-750073-2.png" alt="">
-                            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                         </div>
                         <div class="p-picture__column bottom">
-                            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                             <img src="/img/cooked-foods-750073-2.png" alt="">
                         </div>
 
@@ -134,7 +134,8 @@
                         <button><a href="#">ボタン</a></button>
                     </div>
 
-                <p>boldboldboldboldboldbold</p>
+                    <p>boldboldboldboldboldbold</p>
+                </div>
             </div>
         </div>
 
@@ -180,7 +181,8 @@
 
             </div>
 
-        </aside>            
+        </aside>
+
     </main>
     
     <footer class="l-footer">
