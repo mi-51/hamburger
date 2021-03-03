@@ -8,184 +8,181 @@
     <title>Hamburger Page</title>
 </head>
 <body>
-    <header>
+    <header class="l-header">
+        <div class="l-header__top p-bar">
+            <button class="p-bar__button">Menu</button>
+        </div>
+        <div class="l-header__bottom">
+            <div class="l-header__bottom__left">
+                <a href="/html/front.html">
+                    <h1>Hamburger</h1>
+                </a>
+            </div>
+            <form class="l-header__bottom__right p-serch-form">
+                <input class="p-search-form__box" type="search">
+                <input class="p-search-form__button" type="submit" formaction="./search.html" value="検索">
+            </form>
+        </div>
     </header>
     
     <main class="l-main">
         <div class="l-main__left">
-            <div class="p-bar">
-                <button class="p-bar__button">Menu</button>
-            </div>
-            <div class="l-header">
-                <div class="l-header__left">
-                    <a href="/html/front.html">
-                        <h1>Hamburger</h1>
-                    </a>
-                </div>
-                <form class="l-header__right p-serch-form">
-                    <input class="p-search-form__box" type="search">
-                    <input class="p-search-form__button" type="submit" formaction="./search.html" value="検索">
-                    </form>
+            <div class="p-contents">
+                <div class="p-mainvisual--page">
+                    <h1>ショップについて</h1>
                 </div>
 
-                <div class="p-contents">
-                    <div class="p-mainvisual--page">
-                        <h1>ショップについて</h1>
+                <div class="p-article">
+                    <div class="p-article__htext">
+                        <h2>見出しh2</h2>
+                        <p>pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。</p>
+                        <h3>見出しh3</h3>
+                        <h4>見出しh4</h4>
+                        <h5>見出しh5</h5>
+                        <h6>見出しh6</h6>
+                    </div>
+                    <div class="p-article__quote">
+                        <blockquote>Blockquote 引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ</blockquote>
+                        <p>出典元：<a href="#">https://xxxx.com</a></p>
                     </div>
 
-                    <div class="p-article">
-                        <div class="p-article__htext">
-                            <h2>見出しh2</h2>
-                            <p>pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。</p>
-                            <h3>見出しh3</h3>
-                            <h4>見出しh4</h4>
-                            <h5>見出しh5</h5>
-                            <h6>見出しh6</h6>
+                    <div class="p-picture">
+                        <div class="p-picture__single">
+                            <img src="/img/cooked-foods-750073-2.png" alt="">
                         </div>
-                        <div class="p-article__quote">
-                            <blockquote>Blockquote 引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ</blockquote>
-                            <p>出典元：<a href="#">https://xxxx.com</a></p>
+                        <div class="p-picture__column top">
+                            <img src="/img/cooked-foods-750073-2.png" alt="">
+                            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                         </div>
-
-                        <div class="p-picture">
-                            <div class="p-picture__single">
-                                <img src="/img/cooked-foods-750073-2.png" alt="">
-                            </div>
-                            <div class="p-picture__column top">
-                                <img src="/img/cooked-foods-750073-2.png" alt="">
-                                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                            </div>
-                            <div class="p-picture__column bottom">
-                                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                                <img src="/img/cooked-foods-750073-2.png" alt="">
-                            </div>
-
-                            <div class="p-picture__half">
-                                <img src="/img/cooked-foods-750073-2.png" alt="">
-                            </div>
-                            <div class="p-picture__tile">
-                                <img src="/img/cooked-foods-750073-2.png" alt="">
-                                <img src="/img/cooked-foods-750073-2.png" alt="">
-                                <img src="/img/cooked-foods-750073-2.png" alt="">
-                                <img src="/img/cooked-foods-750073-2.png" alt="">
-                                <img src="/img/cooked-foods-750073-2.png" alt="">
-                                <img src="/img/cooked-foods-750073-2.png" alt="">
-                                <img src="/img/cooked-foods-750073-2.png" alt="">
-                                <img src="/img/cooked-foods-750073-2.png" alt="">
-                                <img src="/img/cooked-foods-750073-2.png" alt="">
-                            </div>
+                        <div class="p-picture__column bottom">
+                            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                            <img src="/img/cooked-foods-750073-2.png" alt="">
                         </div>
 
-                        <div class="p-article__list">
-                            <ol>
-                                <li>リストリストリスト</li>
-                                <li>リストリストリスト
-                                    <ol>
-                                        <li>リスト2リスト2リスト</li>
-                                        <li>リスト2リスト2リスト</li>
-                                    </ol>
-                                </li>
-                                <li>リストリストリスト</li>
-                                <li>リストリストリスト</li>
-                            </ol>
-                            <ul>
-                                <li>リストリストリスト</li>
-                                <li>リストリストリスト
-                                    <ul>
-                                        <li>リスト2リスト2リスト</li>
-                                        <li>リスト2リスト2リスト</li>
-                                    </ul>
-                                </li>
-                                <li>リストリストリスト</li>
-                                <li>リストリストリスト</li>
-                            </ul>
+                        <div class="p-picture__half">
+                            <img src="/img/cooked-foods-750073-2.png" alt="">
                         </div>
-
-                        <pre class="c-wrap__code">
-                            <code>&lt;html>
-                            &lt;head>
-                            &lt;/head>
-                            &lt;body>
-                            &lt;/body>
-                        &lt;/html></code>    
-                        </pre>
-
-                        <div class="c-wrap__table">
-                            <table>
-                                <tr>
-                                    <th>テーブル</th>
-                                    <th>テーブル</th>
-                                </tr>
-                                <tr>
-                                    <td>テーブル</td>
-                                    <td>テーブル</td>
-                                </tr>
-                                <tr>
-                                    <td>テーブル</td>
-                                    <td>テーブル</td>
-                                </tr>
-                                <tr>
-                                    <td>テーブル</td>
-                                    <td>テーブル</td>
-                                </tr>
-                            </table>    
+                        <div class="p-picture__tile">
+                            <img src="/img/cooked-foods-750073-2.png" alt="">
+                            <img src="/img/cooked-foods-750073-2.png" alt="">
+                            <img src="/img/cooked-foods-750073-2.png" alt="">
+                            <img src="/img/cooked-foods-750073-2.png" alt="">
+                            <img src="/img/cooked-foods-750073-2.png" alt="">
+                            <img src="/img/cooked-foods-750073-2.png" alt="">
+                            <img src="/img/cooked-foods-750073-2.png" alt="">
+                            <img src="/img/cooked-foods-750073-2.png" alt="">
+                            <img src="/img/cooked-foods-750073-2.png" alt="">
                         </div>
-
-                        <div class="c-button">
-                            <button><a href="#">ボタン</a></button>
-                        </div>
-
-                        <p>boldboldboldboldboldbold</p>
                     </div>
+
+                    <div class="p-article__list">
+                        <ol>
+                            <li>リストリストリスト</li>
+                            <li>リストリストリスト
+                                <ol>
+                                    <li>リスト2リスト2リスト</li>
+                                    <li>リスト2リスト2リスト</li>
+                                </ol>
+                            </li>
+                            <li>リストリストリスト</li>
+                            <li>リストリストリスト</li>
+                        </ol>
+                        <ul>
+                            <li>リストリストリスト</li>
+                            <li>リストリストリスト
+                                <ul>
+                                    <li>リスト2リスト2リスト</li>
+                                    <li>リスト2リスト2リスト</li>
+                                </ul>
+                            </li>
+                            <li>リストリストリスト</li>
+                            <li>リストリストリスト</li>
+                        </ul>
+                    </div>
+
+                    <pre class="c-wrap__code">
+                        <code>&lt;html>
+                        &lt;head>
+                        &lt;/head>
+                        &lt;body>
+                        &lt;/body>
+                    &lt;/html></code>    
+                    </pre>
+
+                    <div class="c-wrap__table">
+                        <table>
+                            <tr>
+                                <th>テーブル</th>
+                                <th>テーブル</th>
+                            </tr>
+                            <tr>
+                                <td>テーブル</td>
+                                <td>テーブル</td>
+                            </tr>
+                            <tr>
+                                <td>テーブル</td>
+                                <td>テーブル</td>
+                            </tr>
+                            <tr>
+                                <td>テーブル</td>
+                                <td>テーブル</td>
+                            </tr>
+                        </table>    
+                    </div>
+
+                    <div class="c-button">
+                        <button><a href="#">ボタン</a></button>
+                    </div>
+
+                    <p>boldboldboldboldboldbold</p>
                 </div>
             </div>
-
-            <aside class="l-main__right">
-
-                <div class="l-sidebar">
-                    <div class="c-button__close">
-                    </div>
-                    <p>Menu</p>
-                    <ul>
-                        <li><a href="#">バーガー</a>
-                            <ul>
-                                <li><a href="/html/single.html">ハンバーガー</a></li>
-                                <li><a href="#">チーズバーガー</a></li>
-                                <li><a href="#">テリヤキバーガー</a></li>
-                                <li><a href="#">アボカドバーガー</a></li>
-                                <li><a href="#">フィッシュバーガー</a></li>
-                                <li><a href="#">ベーコンバーガー</a></li>
-                                <li><a href="#">チキンバーガー</a></li>
-                            </ul>
-                        </li>
-
-                        <li><a href="#">サイド</a>
-                            <ul>
-                                <li><a href="#">ポテト</a></li>
-                                <li><a href="#">サラダ</a></li>
-                                <li><a href="#">ナゲット</a></li>
-                                <li><a href="#">コーン</a></li>
-                            </ul>
-                        </li> 
-
-                        <li><a href="#">ドリンク</a>
-                            <ul>
-                                <li><a href="#">コーラ</a></li>
-                                <li><a href="#">ファンタ</a></li>
-                                <li><a href="#">オレンジ</a></li>
-                                <li><a href="#">アップル</a></li>
-                                <li><a href="#">紅茶（Ice/Hot）</a></li>
-                                <li><a href="#">コーヒー（Ice/Hot）</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                </div>
-
-            </aside>
-
-            
         </div>
+
+        <aside class="l-main__right">
+
+            <div class="l-sidebar">
+                <div class="c-button__close">
+                </div>
+                <p>Menu</p>
+                <ul>
+                    <li><a href="#">バーガー</a>
+                        <ul>
+                            <li><a href="/html/single.html">ハンバーガー</a></li>
+                            <li><a href="#">チーズバーガー</a></li>
+                            <li><a href="#">テリヤキバーガー</a></li>
+                            <li><a href="#">アボカドバーガー</a></li>
+                            <li><a href="#">フィッシュバーガー</a></li>
+                            <li><a href="#">ベーコンバーガー</a></li>
+                            <li><a href="#">チキンバーガー</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">サイド</a>
+                        <ul>
+                            <li><a href="#">ポテト</a></li>
+                            <li><a href="#">サラダ</a></li>
+                            <li><a href="#">ナゲット</a></li>
+                            <li><a href="#">コーン</a></li>
+                        </ul>
+                    </li> 
+
+                    <li><a href="#">ドリンク</a>
+                        <ul>
+                            <li><a href="#">コーラ</a></li>
+                            <li><a href="#">ファンタ</a></li>
+                            <li><a href="#">オレンジ</a></li>
+                            <li><a href="#">アップル</a></li>
+                            <li><a href="#">紅茶（Ice/Hot）</a></li>
+                            <li><a href="#">コーヒー（Ice/Hot）</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+
+        </aside>
+
     </main>
     
     <footer class="l-footer">

@@ -24,6 +24,9 @@
         min-width: 260px;
         background-color: #F2EDE9;
         height: inherit;
+        @include pc{
+            margin-top: -200px;
+        };
         @include tab{
             display: none; 
         };

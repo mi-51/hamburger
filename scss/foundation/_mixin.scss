@@ -1,5 +1,12 @@
+$pc: 1201px;
 $tab: 1200px;
 $sp: 599px;
+
+@mixin pc {
+    @media (min-width: ($pc)) {
+        @content;
+    }
+}
 
 @mixin tab {
     @media (max-width: ($tab)){
