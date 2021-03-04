@@ -1,29 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/scss/hamburger.css">
-    <title>Hamburger Archive</title>
-</head>
-<body>
-    <header class="l-header">
-        <div class="l-header__top p-bar">
-            <button class="p-bar__button">Menu</button>
-        </div>
-        <div class="l-header__bottom">
-            <div class="l-header__bottom__left">
-                <a href="/html/front.html">
-                    <h1>Hamburger</h1>
-                </a>
-            </div>
-            <form class="l-header__bottom__right p-serch-form">
-                <input class="p-search-form__box" type="search">
-                <input class="p-search-form__button" type="submit" formaction="./search.html" value="検索">
-            </form>
-        </div>
-    </header>
+<?php get_header(); ?>    
     
     <main class="l-main">
         <div class="l-main__left">
@@ -111,58 +86,10 @@
             </div>
         </div>
 
-        <aside class="l-main__right">
-
-            <div class="l-sidebar">
-                <div class="c-button__close">
-                </div>
-                <p>Menu</p>
-                <ul>
-                    <li><a href="#">バーガー</a>
-                        <ul>
-                            <li><a href="/html/single.html">ハンバーガー</a></li>
-                            <li><a href="#">チーズバーガー</a></li>
-                            <li><a href="#">テリヤキバーガー</a></li>
-                            <li><a href="#">アボカドバーガー</a></li>
-                            <li><a href="#">フィッシュバーガー</a></li>
-                            <li><a href="#">ベーコンバーガー</a></li>
-                            <li><a href="#">チキンバーガー</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="#">サイド</a>
-                        <ul>
-                            <li><a href="#">ポテト</a></li>
-                            <li><a href="#">サラダ</a></li>
-                            <li><a href="#">ナゲット</a></li>
-                            <li><a href="#">コーン</a></li>
-                        </ul>
-                    </li> 
-
-                    <li><a href="#">ドリンク</a>
-                        <ul>
-                            <li><a href="#">コーラ</a></li>
-                            <li><a href="#">ファンタ</a></li>
-                            <li><a href="#">オレンジ</a></li>
-                            <li><a href="#">アップル</a></li>
-                            <li><a href="#">紅茶（Ice/Hot）</a></li>
-                            <li><a href="#">コーヒー（Ice/Hot）</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </aside>
+        <?php get_sidebar(); ?>
     </main>
 
-    <footer class="l-footer">
-        <div class="l-footer__section">
-            <a href="/html/page.html">ショップ情報</a>
-            <a href="/html/page.html">ヒストリー</a>
-        </div>
-        <p> 
-            <small>Copyright : RaiseTech</small>
-        </p>
-    </footer>
+    <?php get_footer(); ?>
 
     <script src="/js/jquery-3.5.1.min.js"></script>
     <script src="/js/script.js"></script>
