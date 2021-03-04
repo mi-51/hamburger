@@ -562,11 +562,11 @@ input, select {
 }
 
 .p-branch-menu .takeout {
-  background: url(/img/takeout.png) no-repeat center;
+  background: url("http://hamburger.local/wp-content/themes/hamburger/img/takeout.png") no-repeat center;
 }
 
 .p-branch-menu .eatin {
-  background: url(/img/eatin.png);
+  background: url("http://hamburger.local/wp-content/themes/hamburger/img/eatin.png");
 }
 
 .p-branch-menu h2 {
@@ -1079,7 +1079,7 @@ input, select {
 
 .p-mainvisual {
   height: 530px;
-  background-image: url(/img/front-mainvisual.png) no-repeat center;
+  background: url("http://hamburger.local/wp-content/themes/hamburger/img/front-mainvisual.png") no-repeat center;
   background-size: cover;
 }
 

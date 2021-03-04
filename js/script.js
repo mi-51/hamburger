@@ -1,6 +1,6 @@
 let timer = 0;
 let currentWidth = window.innerWidth;
-$(window).resize(function(){
+jQuery(window).resize(function(){
     if (currentWidth == window.innerWidth) {
         return;
     }
@@ -15,8 +15,8 @@ $(window).resize(function(){
 });
 
 
-$('.p-bar__button, .c-button__close').click(function(){
-    $('.c-button__close, .l-main__right, .l-main__left, .l-main').toggleClass('is-open');
+jQuery('.p-bar__button, .c-button__close').click(function(){
+    jQuery('.c-button__close, .l-main__right, .l-main__left, .l-main').toggleClass('is-open');
     // 以下行を追加
-    $('body').toggleClass('is-fixed');
+    jQuery('body').toggleClass('is-fixed');
 });
