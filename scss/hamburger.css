@@ -11,6 +11,15 @@ body.is-fixed::before {
   z-index: 199;
 }
 
+input.font-awesome {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  opacity: 0.6;
+  padding-left: 8px;
+}
+
 @-webkit-keyframes SlideIn {
   0% {
     opacity: 0.8;
@@ -1070,7 +1079,7 @@ input, select {
 
 .p-mainvisual {
   height: 530px;
-  background: url(/img/front-mainvisual.png) no-repeat center;
+  background-image: url(/img/front-mainvisual.png) no-repeat center;
   background-size: cover;
 }
 

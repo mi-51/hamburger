@@ -12,6 +12,15 @@ body{
     }
 }
 
+input.font-awesome {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    opacity: 0.6;
+    padding-left: 8px;
+}
+
 @keyframes SlideIn {
     0%{
         opacity: 0.8;

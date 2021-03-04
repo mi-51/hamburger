@@ -1,6 +1,6 @@
 .p-mainvisual{
     height: 530px;
-    background: url(/img/front-mainvisual.png) no-repeat center;
+    background-image: url(/img/front-mainvisual.png) no-repeat center;
     background-size: cover;
     @include sp{
         height: 280px;
