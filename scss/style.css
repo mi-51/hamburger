@@ -11,15 +11,6 @@ body.is-fixed::before {
   z-index: 199;
 }
 
-input.font-awesome {
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
-  opacity: 0.6;
-  padding-left: 8px;
-}
-
 @-webkit-keyframes SlideIn {
   0% {
     opacity: 0.8;
@@ -562,11 +553,11 @@ input, select {
 }
 
 .p-branch-menu .takeout {
-  background: url(../img/takeout.png) no-repeat center;
+  background: url(/img/takeout.png) no-repeat center;
 }
 
 .p-branch-menu .eatin {
-  background: url(../img/eatin.png);
+  background: url(/img/eatin.png);
 }
 
 .p-branch-menu h2 {
@@ -1079,7 +1070,7 @@ input, select {
 
 .p-mainvisual {
   height: 530px;
-  background: url(../img/front-mainvisual.png) no-repeat center;
+  background: url(/img/front-mainvisual.png) no-repeat center;
   background-size: cover;
 }
 
@@ -1118,7 +1109,7 @@ input, select {
 
 .p-mainvisual--archive, .p-mainvisual--search {
   height: 240px;
-  background: url(../img/archive_top.png) no-repeat center;
+  background: url(/img/archive_top.png) no-repeat center;
   z-index: -15;
 }
 
@@ -1164,13 +1155,13 @@ input, select {
 }
 
 .p-mainvisual--single {
-  background: url(../img/single_top.png) no-repeat center;
+  background: url(/img/single_top.png) no-repeat center;
   -webkit-filter: contrast(130%);
           filter: contrast(130%);
 }
 
 .p-mainvisual--page {
-  background: url(../img/page_top.png) no-repeat center;
+  background: url(/img/page_top.png) no-repeat center;
 }
 
 .p-mainvisual--page::before {
@@ -1479,4 +1470,4 @@ input, select {
     padding-top: 45px;
   }
 }
-/*# sourceMappingURL=hamburger.css.map */
+/*# sourceMappingURL=style.css.map */
