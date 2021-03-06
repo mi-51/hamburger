@@ -23,30 +23,30 @@
 
                     <div class="p-picture">
                         <div class="p-picture__single">
-                            <img src="/img/cooked-foods-750073-2.png" alt="">
+                            <img src="<?php echo esc_url ( get_template_directory_uri() . '/img/cooked-foods-750073-2.png'); ?>" alt="">
                         </div>
                         <div class="p-picture__column top">
-                            <img src="/img/cooked-foods-750073-2.png" alt="">
+                            <img src="<?php echo esc_url ( get_template_directory_uri() . '/img/cooked-foods-750073-2.png'); ?>" alt="">
                             <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                         </div>
                         <div class="p-picture__column bottom">
                             <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                            <img src="/img/cooked-foods-750073-2.png" alt="">
+                            <img src="<?php echo esc_url ( get_template_directory_uri() . '/img/cooked-foods-750073-2.png'); ?>" alt="">
                         </div>
 
                         <div class="p-picture__half">
-                            <img src="/img/cooked-foods-750073-2.png" alt="">
+                            <img src="<?php echo esc_url ( get_template_directory_uri() . '/img/cooked-foods-750073-2.png'); ?>" alt="">
                         </div>
                         <div class="p-picture__tile">
-                            <img src="/img/cooked-foods-750073-2.png" alt="">
-                            <img src="/img/cooked-foods-750073-2.png" alt="">
-                            <img src="/img/cooked-foods-750073-2.png" alt="">
-                            <img src="/img/cooked-foods-750073-2.png" alt="">
-                            <img src="/img/cooked-foods-750073-2.png" alt="">
-                            <img src="/img/cooked-foods-750073-2.png" alt="">
-                            <img src="/img/cooked-foods-750073-2.png" alt="">
-                            <img src="/img/cooked-foods-750073-2.png" alt="">
-                            <img src="/img/cooked-foods-750073-2.png" alt="">
+                            <img src="<?php echo get_template_directory_uri() . '/img/cooked-foods-750073-2.png'(); ?>" alt="">
+                            <img src="<?php echo get_template_directory_uri() . '/img/cooked-foods-750073-2.png'(); ?>" alt="">
+                            <img src="<?php echo get_template_directory_uri() . '/img/cooked-foods-750073-2.png'(); ?>" alt="">
+                            <img src="<?php echo get_template_directory_uri() . '/img/cooked-foods-750073-2.png'(); ?>" alt="">
+                            <img src="<?php echo get_template_directory_uri() . '/img/cooked-foods-750073-2.png'(); ?>" alt="">
+                            <img src="<?php echo get_template_directory_uri() . '/img/cooked-foods-750073-2.png'(); ?>" alt="">
+                            <img src="<?php echo get_template_directory_uri() . '/img/cooked-foods-750073-2.png'(); ?>" alt="">
+                            <img src="<?php echo get_template_directory_uri() . '/img/cooked-foods-750073-2.png'(); ?>" alt="">
+                            <img src="<?php echo get_template_directory_uri() . '/img/cooked-foods-750073-2.png'(); ?>" alt="">
                         </div>
                     </div>
 
@@ -119,8 +119,6 @@
     
     <?php get_footer(); ?>
 
-    <script src="/js/jquery-3.5.1.min.js"></script>
-    <script src="/js/script.js"></script>
-
+    <?php wp_footer(); ?>
 </body>
 </html>

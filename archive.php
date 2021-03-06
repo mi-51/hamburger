@@ -16,7 +16,7 @@
                 </div>
 
                 <div class="p-menu-card">
-                    <img src="/img/archive_card.png" alt="">
+                    <img src="<?php echo esc_url ( get_template_directory_uri() . '/img/archive_card.png'); ?>" alt="">
                     <div class="p-menu-card__intro">
                         <h3>チーズバーガー</h3>
                         <h4>小見出しが入ります</h4>
@@ -26,7 +26,7 @@
                 </div>
 
                 <div class="p-menu-card">
-                    <img src="/img/archive_card.png" alt="">
+                    <img src="<?php echo esc_url ( get_template_directory_uri() . '/img/archive_card.png'); ?>" alt="">
                     <div class="p-menu-card__intro">
                         <h3>ダブルチーズバーガー</h3>
                         <h4>小見出しが入ります</h4>
@@ -36,7 +36,7 @@
                 </div>
 
                 <div class="p-menu-card">
-                    <img src="/img/archive_card.png" alt="">
+                    <img src="<?php echo esc_url ( get_template_directory_uri() . '/img/archive_card.png'); ?>" alt="">
                     <div class="p-menu-card__intro">
                         <h3>スペシャルチーズバーガー</h3>
                         <h4>小見出しが入ります</h4>
@@ -71,8 +71,6 @@
 
     <?php get_footer(); ?>
 
-    <script src="/js/jquery-3.5.1.min.js"></script>
-    <script src="/js/script.js"></script>
 
 </body>
 </html>

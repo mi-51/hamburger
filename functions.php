@@ -20,3 +20,25 @@
     }
     add_action( 'wp_enqueue_scripts', 'hamburger_script' );
 
+    // function register_hamburger_menus(){
+    //     register_nav_menus( array(
+    //         'side-menu' => 'SideMenu',
+    //         'footer-menu' => 'FooterMenu',
+    //     ));
+    // }
+    // add_action( 'after_setup_theme', 'register_hamburger_menus');
+
+    function hamburger_widgets_init() {
+        register_sidebar (
+            array(
+                'name'          => 'All Menu',
+                'id'            => 'menu_widget',
+                'description'   => 'メニューの一覧です',
+                'before_widget' => '<div id="%1$s" class="widget %2$s">',
+                'after_widget'  => '</div>',
+                'before_title'  => '<h2 class="c-category-title">',
+                'after_title'   => "</h2>\n",
+            )
+        );
+    }
+    add_action( 'widgets_init', 'hamburger_widgets_init' );

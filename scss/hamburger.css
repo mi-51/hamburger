@@ -512,6 +512,10 @@ input, select {
   height: 5px;
 }
 
+.c-category-title {
+  display: none;
+}
+
 .p-branch-menu {
   height: 1500px;
   display: -webkit-box;
