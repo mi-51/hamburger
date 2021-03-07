@@ -7,19 +7,27 @@
     flex-direction: column;
     &__section{
         padding-top: 43px;
-        a{
-            color: #fff;
-            font-size: 20px;
-            padding: 43px 10px;
-            &:last-of-type{
+        ul{
+            display: flex;
+            li{
                 position: relative;
                 &::before{
                     position: absolute;
-                    left: -3px;
+                    left: 0;
                     content: "";
                     background-color: #fff;
                     width: 2px;
                     height: 20px;
+                }
+                &:first-of-type{
+                    &::before{
+                        display: none;
+                    }
+                }
+                a{
+                    color: #fff;
+                    font-size: 20px;
+                    padding: 43px 10px;
                 }
             }
         }

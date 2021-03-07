@@ -1,10 +1,13 @@
 <footer class="l-footer">
     <div class="l-footer__section">
-        <a href="<?php echo get_page_link(14); ?>">ショップ情報</a>
-        <a href="<?php echo get_page_link(16); ?>">ヒストリー</a>
+        <?php 
+            wp_nav_menu( array( 
+                'theme_location' => 'footer-menu' 
+            ) ); 
+        ?>    
     </div>
     <p> 
-        <small>Copyright : RaiseTech</small>
+        <small>Copyright : <?php bloginfo( 'name' ); ?> 2021</small>
     </p>
 </footer>
 

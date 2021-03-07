@@ -20,13 +20,13 @@
     }
     add_action( 'wp_enqueue_scripts', 'hamburger_script' );
 
-    // function register_hamburger_menus(){
-    //     register_nav_menus( array(
-    //         'side-menu' => 'SideMenu',
-    //         'footer-menu' => 'FooterMenu',
-    //     ));
-    // }
-    // add_action( 'after_setup_theme', 'register_hamburger_menus');
+    function register_hamburger_menus(){
+        register_nav_menus( array(
+            'side-menu' => 'SideMenu',
+            'footer-menu' => 'FooterMenu',
+        ));
+    }
+    add_action( 'after_setup_theme', 'register_hamburger_menus');
 
     function hamburger_widgets_init() {
         register_sidebar (
