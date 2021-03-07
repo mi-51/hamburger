@@ -362,7 +362,7 @@ input, select {
 .l-footer {
   width: 100%;
   height: 150px;
-  background-color: #9D8670;
+  background-color: #9d8670;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -410,46 +410,8 @@ input, select {
 .c-wrap p {
   font-size: 16px;
   padding: 9px 19px;
-  color: #3C2A10;
+  color: #3c2a10;
   line-height: 1.5;
-}
-
-.c-wrap__code {
-  width: 100%;
-  background-color: #F5F5F5;
-  padding: 50px;
-}
-
-.c-wrap__code code {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.c-wrap__table {
-  width: 100%;
-  padding: 60px 0;
-}
-
-.c-wrap__table table {
-  font-size: 16px;
-  width: 100%;
-}
-
-.c-wrap__table table tr {
-  padding: 30px;
-}
-
-.c-wrap__table table tr th, .c-wrap__table table tr td {
-  padding: 30px;
-  font-weight: 500;
-  border: solid 1px;
-  text-align: inherit;
-}
-
-@media (max-width: 599px) {
-  .c-wrap__table table tr th:first-child, .c-wrap__table table tr td:first-child {
-    width: 35%;
-  }
 }
 
 .c-button {
@@ -748,6 +710,8 @@ input, select {
 
 .p-article {
   padding: 30px 90px 180px;
+  font-weight: normal;
+  color: #3C2A10;
 }
 
 @media (max-width: 1200px) {
@@ -762,256 +726,121 @@ input, select {
   }
 }
 
-.p-article__htext * {
+.p-article h2 {
   padding: 33px 0;
-  font-weight: normal;
-  color: #3C2A10;
-}
-
-.p-article__htext h2 {
   font-size: 36px;
 }
 
-.p-article__htext p {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.p-article__htext h3 {
+.p-article h3 {
+  padding: 33px 0;
   font-size: 28px;
 }
 
-.p-article__htext h4, .p-article__htext h5, .p-article__htext h6 {
+.p-article h4, .p-article h5, .p-article h6 {
+  padding: 33px 0;
   font-size: 20px;
 }
 
-.p-article__quote {
-  width: 100%;
-  height: 100%;
-  background-color: #F5F5F5;
-}
-
-.p-article__quote * {
+.p-article p {
+  padding: 33px 0;
   font-size: 16px;
+  line-height: 1.6;
 }
 
-.p-article__quote blockquote, .p-article__quote p {
-  padding: 0 50px;
-}
-
-@media (max-width: 599px) {
-  .p-article__quote blockquote, .p-article__quote p {
-    padding: 0 20px;
-  }
-}
-
-.p-article__quote blockquote {
-  padding-top: 50px;
+.p-article blockquote {
+  padding: 33px 0;
+  background-color: #F5F5F5;
+  padding-left: 50px;
+  padding-right: 50px;
   line-height: 1.6;
 }
 
 @media (max-width: 599px) {
-  .p-article__quote blockquote {
+  .p-article blockquote {
     padding-top: 30px;
   }
 }
 
-.p-article__quote p {
-  padding-bottom: 60px;
+.p-article blockquote > p {
+  padding: 0 0 33px;
 }
 
-@media (max-width: 1200px) {
-  .p-article__quote p {
-    padding-top: 60px;
-  }
-}
-
-@media (max-width: 599px) {
-  .p-article__quote p {
-    padding: 32px 20px;
-  }
-}
-
-.p-article__list {
+.p-article ol {
+  padding: 33px 0;
   width: 100%;
-  padding: 67px;
   font-size: 16px;
-}
-
-@media (max-width: 599px) {
-  .p-article__list {
-    padding: 0;
-  }
-}
-
-.p-article__list ol {
   line-height: 1.6;
-  padding-bottom: 60px;
 }
 
 @media (max-width: 599px) {
-  .p-article__list ol {
+  .p-article ol {
     padding: 0 20px 30px;
   }
 }
 
-.p-article__list ol li {
+.p-article ol > li {
   list-style: decimal;
 }
 
-.p-article__list ol li ol {
+.p-article ol > li > ol {
   padding: 30px 20px;
 }
 
-.p-article__list ul {
+.p-article ul {
+  padding: 33px 0;
+  width: 100%;
+  font-size: 16px;
   line-height: 1.6;
 }
 
 @media (max-width: 599px) {
-  .p-article__list ul {
+  .p-article ul {
     padding: 0 0 30px;
   }
 }
 
-.p-article__list ul li ul {
+.p-article ul > li > ul {
   padding: 30px 20px;
 }
 
-.p-article > p {
-  font-weight: bold;
+.p-article pre {
+  padding: 33px 0;
+  width: 100%;
+  background-color: #F5F5F5;
+  padding: 50px;
 }
 
-.p-picture {
+.p-article pre code {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.p-article figure {
+  padding: 33px 0;
+}
+
+.p-article figure table {
+  padding: 60px 0;
+  font-size: 16px;
   width: 100%;
 }
 
-.p-picture * {
-  padding: 15px 0;
+.p-article figure table tr {
+  padding: 30px;
 }
 
-.p-picture__single {
-  height: 100%;
+.p-article figure table tr th, .p-article figure table tr td {
+  padding: 30px;
+  font-weight: 500;
+  border: solid 1px;
+  text-align: inherit;
 }
 
-.p-picture__single img {
-  width: 100%;
-  height: 300px;
+.p-article figure img {
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: bottom;
-     object-position: bottom;
-  padding: 0;
-}
-
-@media (max-width: 599px) {
-  .p-picture__single img {
-    height: 200px;
-  }
-}
-
-.p-picture__column {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.p-picture__column p {
-  line-height: 1.5;
-  padding: 0;
-}
-
-.p-picture__column img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
-  width: 40%;
-  padding: 0;
-}
-
-.p-picture .top p {
-  padding-left: 40px;
-}
-
-@media (max-width: 1200px) {
-  .p-picture .top p {
-    padding-left: 20px;
-  }
-}
-
-@media (max-width: 599px) {
-  .p-picture .top p {
-    padding-left: 10px;
-  }
-}
-
-.p-picture .bottom p {
-  padding-right: 40px;
-}
-
-@media (max-width: 1200px) {
-  .p-picture .bottom p {
-    padding-right: 20px;
-  }
-}
-
-@media (max-width: 599px) {
-  .p-picture .bottom p {
-    padding-right: 10px;
-  }
-}
-
-.p-picture__half {
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.p-picture__half img {
-  padding: 0;
-}
-
-@media (max-width: 599px) {
-  .p-picture__half img {
-    width: 70%;
-  }
-}
-
-.p-picture__tile {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-@media (max-width: 1200px) {
-  .p-picture__tile {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-  }
-}
-
-.p-picture__tile img {
-  width: 32%;
-  padding: 5px 5px;
-}
-
-@media (max-width: 1200px) {
-  .p-picture__tile img {
-    width: 50%;
-    padding: 10px;
-  }
-}
-
-@media (max-width: 599px) {
-  .p-picture__tile img {
-    width: 100%;
-  }
+  -o-object-position: center;
+     object-position: center;
 }
 
 .p-bar {

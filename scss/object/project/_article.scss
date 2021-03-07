@@ -1,94 +1,102 @@
 .p-article{
     padding: 30px 90px 180px;
+    font-weight: normal;
+    color: #3C2A10;
     @include tab{
         padding: 70px 60px;
     }
     @include sp{
         padding: 35px 22px;
     }
-    &__htext{
-        *{
-            padding: 33px 0;
-            font-weight: normal;
-            color: #3C2A10;
-        }
-        h2{
-            font-size: 36px;
-        }
-        p{
-            font-size: 16px;
-            line-height: 1.6;
-        }
-        h3{
-            font-size: 28px;
-        }
-        h4,h5,h6{
-            font-size: 20px;
-        }
+    h2{
+        padding: 33px 0;
+        font-size: 36px;
     }
-    &__quote{
-        width: 100%;
-        height: 100%;
-        background-color: #F5F5F5;
-        *{
-            font-size: 16px;
-        }
-        blockquote,p{
-            padding: 0 50px;
-            @include sp{
-                padding: 0 20px;
-            }
-        }
-        blockquote{
-            padding-top: 50px;
-            line-height: 1.6;
-            @include sp{
-                padding-top: 30px;
-            }
-        }
-        p{
-            padding-bottom: 60px;
-            @include tab{
-                padding-top: 60px;
-            }
-            @include sp{
-                padding: 32px 20px;
-            }
-        }
+    h3{
+        padding: 33px 0;
+        
+        font-size: 28px;
     }
-    &__list{
-        width: 100%;
-        padding: 67px;
+    h4,h5,h6{
+        padding: 33px 0;
+        font-size: 20px;
+    }
+    p{
+        padding: 33px 0;
         font-size: 16px;
+        line-height: 1.6;
+    }
+    blockquote{
+        padding: 33px 0;
+        background-color: #F5F5F5;
+        padding-left: 50px;
+        padding-right: 50px;
+        line-height: 1.6;
         @include sp{
-            padding: 0;
+            padding-top: 30px;
         }
-        ol{
-            line-height: 1.6;
-            padding-bottom: 60px;
-            @include sp{
-                padding: 0 20px 30px;
-            }
-            li{
-                list-style: decimal;
-                ol{
-                    padding: 30px 20px;
-                }
-            }
+    }
+    blockquote>p{
+        padding: 0 0 33px;
+    }    
+    ol{
+        padding: 33px 0;
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.6;
+        @include sp{
+            padding: 0 20px 30px;
         }
-        ul{
-            line-height: 1.6;
-            @include sp{
-                padding: 0 0 30px;
-            }
-            li{
-                ul{
-                    padding: 30px 20px;
-                }
+        >li{
+            list-style: decimal;
+            >ol{
+                padding: 30px 20px;
             }
         }
     }
-    >p{
-        font-weight: bold;
+    ul{
+        padding: 33px 0;
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.6;
+        @include sp{
+            padding: 0 0 30px;
+        }
+        >li{
+            >ul{
+                padding: 30px 20px;
+            }
+        }
+    }
+    pre{
+        padding: 33px 0;
+        width: 100%;
+        background-color: #F5F5F5;
+        padding: 50px;
+        code{
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    }
+    figure{
+        padding: 33px 0;
+        table{
+            padding: 60px 0;
+            font-size: 16px;
+            width: 100%;
+            tr{
+                padding: 30px;
+                th,td{
+                    padding: 30px;
+                    font-weight: 500;
+                    border: solid 1px;
+                    text-align: inherit;
+                }
+            }    
+        }
+        img{
+            object-fit: cover;
+            object-position: center;
+        }
     }
 }
