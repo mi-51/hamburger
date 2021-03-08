@@ -5,53 +5,77 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        @include sp{
-            display: none;
-        }
         ul{
             display: flex;
+            align-items: center;
             li{
                 padding: 0 8px;
                 font-size: 1.2rem;
-                &:first-of-type{
-                    padding-top: 10px;
-                    &::after{
-                        content: "<<";
-                        color: #3C2B1C;
-                        padding-left: 10px;
-                    }
-                }
-                &:last-of-type{
-                    position: relative;
-                    &::after{
-                        position: absolute;
-                        top: 10px;
-                        right: -24px;
-                        content: ">>";
-                        color: #3C2B1C;
-                    }
-                }
                 a{
                     display: block;
                     color: #3C2B1C;
                     border: solid 1px #3C2B1C;
                     padding: 10px;
+                    @include sp{
+                        display: none;
+                    }
+                    &.prev{
+                        border: none;
+                        @include sp{
+                            display: block;
+                            position: absolute;
+                            left: 0;
+                        }
+                        &::after{
+                            width: 70px;
+                            content: "前へ";
+                            display: none;
+                            position: absolute;
+                            left: 30px;
+                            top: 12px;
+                            padding-left: 3px;
+                            @include sp{
+                                display: block;
+                            }
+                        }
+                    }
+                    &.next{
+                        border: none;
+                        @include sp{
+                            display: block;
+                            position: absolute;
+                            right: 0;
+                        }
+                        &::before{
+                            width: 70px;
+                            text-align: right;
+                            content: "次へ";
+                            display: none;
+                            position: absolute;
+                            right: 30px;
+                            top: 12px;
+                            padding-right: 3px;
+                            @include sp{
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                span{
+                    padding: 10px;
+                    @include sp{
+                        display: none;
+                    }
+                }
+                .current{
+                    border: solid 1px #3C2B1C;
+                    background-color: #3C2B1C;
+                    color: #fff;
+                    @include sp{
+                        display: none;
+                    }
                 }
             }
-        }
-    }
-    &--sp{
-        display: none;
-        @include sp{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 100px;
-            padding: 0 20px;
-        }
-        a{
-            color: #707070;
-            font-size: 16px;
         }
     }
 }
