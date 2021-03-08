@@ -1,6 +1,7 @@
 <?php
     add_theme_support( 'menus' );
     add_theme_support( 'title-tag' );
+    add_theme_support( 'post-thumbnails' ); //追加
 
     function hamburger_title( $title ) {
         if ( is_front_page() && is_home() ) {
