@@ -425,6 +425,16 @@ input, select {
   line-height: 1.5;
 }
 
+.c-wrap__search-result {
+  padding: 30px 100px;
+}
+
+@media (max-width: 599px) {
+  .c-wrap__search-result {
+    padding: 30px 22px;
+  }
+}
+
 .c-button {
   width: 100%;
   padding-bottom: 60px;

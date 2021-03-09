@@ -5,4 +5,10 @@
         color: #3c2a10;
         line-height: 1.5;
     }
+    &__search-result{
+        padding: 30px 100px;
+        @include sp{
+            padding: 30px 22px;
+        }
+    }
 }

@@ -6,7 +6,7 @@
                 <div class="p-mainvisual--search">
                     <div class="p-mainvisual__text">
                         <h2>Search:</h2>
-                        <p>チーズバーガー</p>
+                        <p><?php echo $_GET['s']; ?></p>
                     </div>
                 </div>
 
@@ -15,73 +15,36 @@
                     <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                 </div>
 
-                <div class="p-menu-card">
-                    <img src="<?php echo esc_url ( get_template_directory_uri() . '/img/archive_card.png'); ?>" alt="">
-                    <div class="p-menu-card__intro">
-                        <h3>見出しが入ります</h3>
-                        <h4>小見出しが入ります</h4>
-                        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                        <a href="#">詳しく見る</a>
-                    </div>
+                <div class="c-wrap__search-result">
+                    <?php
+                    if (isset($_GET['s']) && empty($_GET['s'])) { //検索ワードが未入力の場合は、
+                        echo '検索キーワード未入力'; // '検索キーワード未入力'と出力してください。
+                    } else { //そうでない場合は
+                        echo $_GET['s'] .'の検索結果は'.$wp_query->found_posts .'件です'; // '検索ワードの検索結果'と件数を出力してください。
+                    }
+                    ?>
                 </div>
 
-                <div class="p-menu-card">
-                    <img src="<?php echo esc_url ( get_template_directory_uri() . '/img/archive_card.png'); ?>" alt="">
-                    <div class="p-menu-card__intro">
-                        <h3>見出しが入ります</h3>
-                        <h4>小見出しが入ります</h4>
-                        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                        <a href="#">詳しく見る</a>
-                    </div>
-                </div>
+                <?php
+                if (have_posts()) :
+                    while (have_posts()) :
+                        the_post(); ?>
+                        <div class="p-menu-card" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                            <?php the_post_thumbnail(); ?>
+                            <div class="p-menu-card__intro">
+                                <h3><?php the_title(); ?></h3>
+                                <?php the_excerpt(); ?>
+                                <a href="<?php the_permalink(); ?>">詳しく見る</a>
+                            </div>
+                        </div>
+                    <?php endwhile;
+                else :
+                    ?>
+                <?php endif; ?>
 
-                <div class="p-menu-card">
-                    <img src="<?php echo esc_url ( get_template_directory_uri() . '/img/archive_card.png'); ?>" alt="">
-                    <div class="p-menu-card__intro">
-                        <h3>見出しが入ります</h3>
-                        <h4>小見出しが入ります</h4>
-                        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                        <a href="#">詳しく見る</a>
-                    </div>
-                </div>
-
-                <div class="p-menu-card">
-                    <img src="<?php echo esc_url ( get_template_directory_uri() . '/img/archive_card.png'); ?>" alt="">
-                    <div class="p-menu-card__intro">
-                        <h3>見出しが入ります</h3>
-                        <h4>小見出しが入ります</h4>
-                        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                        <a href="#">詳しく見る</a>
-                    </div>
-                </div>
-
-                <div class="p-menu-card">
-                    <img src="<?php echo esc_url ( get_template_directory_uri() . '/img/archive_card.png'); ?>" alt="">
-                    <div class="p-menu-card__intro">
-                        <h3>見出しが入ります</h3>
-                        <h4>小見出しが入ります</h4>
-                        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                        <a href="#">詳しく見る</a>
-                    </div>
-                </div>
 
                 <div class="p-pagenation--pc p-pagenation--tab">
-                    <ul>
-                        <li>page 1/10</li>
-                        <li><a href="/html/archive.html">1</a></li>
-                        <li><a href="/html/archive.html">2</a></li>
-                        <li><a href="/html/archive.html">3</a></li>
-                        <li><a href="/html/archive.html">4</a></li>
-                        <li><a href="/html/archive.html">5</a></li>
-                        <li><a href="/html/archive.html">6</a></li>
-                        <li><a href="/html/archive.html">7</a></li>
-                        <li><a href="/html/archive.html">8</a></li>
-                        <li><a href="/html/archive.html">9</a></li>
-                    </ul>
-                </div>
-                <div class="p-pagenation--sp">
-                    <a href="#">&lt;&lt; 前へ</a>
-                    <a href="#">次へ &gt;&gt;</a>
+                    <?php if( function_exists("the_pagination") ) the_pagination(); ?>
                 </div>
             </div>
         </div>
@@ -89,4 +52,4 @@
         <?php get_sidebar(); ?>
     </main>
 
-    <?php get_footer(); ?>
+<?php get_footer(); ?>
