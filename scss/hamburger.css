@@ -429,6 +429,12 @@ input, select {
   padding: 30px 100px;
 }
 
+@media (max-width: 1200px) {
+  .c-wrap__search-result {
+    padding: 30px 40px;
+  }
+}
+
 @media (max-width: 599px) {
   .c-wrap__search-result {
     padding: 30px 22px;

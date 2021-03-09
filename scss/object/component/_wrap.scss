@@ -7,6 +7,9 @@
     }
     &__search-result{
         padding: 30px 100px;
+        @include tab{
+            padding: 30px 40px;
+        }
         @include sp{
             padding: 30px 22px;
         }
