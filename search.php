@@ -6,7 +6,7 @@
                 <div class="p-mainvisual--search">
                     <div class="p-mainvisual__text">
                         <h2>Search:</h2>
-                        <p><?php echo $_GET['s']; ?></p>
+                        <p><?php echo get_search_query(); ?></p>
                     </div>
                 </div>
 

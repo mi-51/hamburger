@@ -304,6 +304,38 @@ input, select {
   }
 }
 
+.l-header__section {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  background-color: #707070;
+  color: #FFF7EF;
+}
+
+.l-header__section ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.l-header__section ul li a {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  line-height: 40px;
+  padding: 0 20px;
+}
+
+.l-header__section ul li a:hover {
+  background-color: #FFF7EF;
+  color: #707070;
+}
+
 .l-sidebar {
   padding-left: 46px;
 }
@@ -439,6 +471,39 @@ input, select {
   .c-wrap__search-result {
     padding: 30px 22px;
   }
+}
+
+.c-wrap__404error {
+  padding: 50px;
+  text-align: center;
+}
+
+.c-wrap__404error h2 {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: normal;
+  padding-bottom: 60px;
+  color: #707070;
+}
+
+.c-wrap__404error img {
+  width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-bottom: 50px;
+}
+
+.c-wrap__404error button {
+  background-color: #fff7ef;
+  border: solid 2px #707070;
+  border-radius: 10px;
+}
+
+.c-wrap__404error button a {
+  display: block;
+  padding: 14px 40px;
+  color: #707070;
+  font-size: 1.4rem;
 }
 
 .c-button {
@@ -1156,6 +1221,7 @@ input, select {
 }
 
 .p-menu-card__intro {
+  width: 57%;
   background-color: #3C2B1C;
   padding: 50px 63px;
   height: auto;
@@ -1210,6 +1276,39 @@ input, select {
   font-size: 16px;
   margin: auto;
   padding: 25px;
+}
+
+.p-menu-card__intro--custom {
+  width: 50%;
+}
+
+.p-menu-card__intro--custom > h1 {
+  padding: 20px 0 20px 20px;
+  font-size: 40px;
+}
+
+.p-menu-card__info {
+  width: 100%;
+  padding: 30px 20px;
+}
+
+.p-menu-card__info > p {
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.p-menu-card--custom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
+}
+
+.p-menu-card--custom img {
+  width: 50%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-contents {

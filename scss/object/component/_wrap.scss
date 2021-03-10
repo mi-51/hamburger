@@ -14,4 +14,31 @@
             padding: 30px 22px;
         }
     }
+    &__404error{
+        padding: 50px;
+        text-align: center;
+        h2{
+            text-align: left;
+            font-size: 2rem;
+            font-weight: normal;
+            padding-bottom: 60px;
+            color: #707070;
+        }
+        img{
+            width: 80%;
+            object-fit: cover;
+            padding-bottom: 50px;
+        }
+        button{
+            background-color: #fff7ef;
+            border: solid 2px #707070;
+            border-radius: 10px;
+            a{
+                display: block;
+                padding: 14px 40px;
+                color: #707070;
+                font-size: 1.4rem;
+            }    
+        }
+    }
 }

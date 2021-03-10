@@ -20,4 +20,14 @@
             </div>
             <?php get_search_form(); ?>
         </div>
+
+        <?php 
+            if ( has_nav_menu('header-menu') ){
+            echo '<div class="l-header__section">';
+            wp_nav_menu( array( 
+                    'theme_location' => 'header-menu' 
+                ) );    
+            echo '</div>';
+            }
+        ?>
     </header>

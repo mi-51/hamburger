@@ -3,6 +3,39 @@
     add_theme_support( 'title-tag' );
     add_theme_support( 'post-thumbnails' );
 
+    //メニュー機能の追加と定義
+    function register_hamburger_menus(){
+        register_nav_menus( array(
+            'footer-menu' => 'FooterMenu',
+            'header-menu' => 'HeaderMenu',
+        ));
+    }
+    add_action( 'after_setup_theme', 'register_hamburger_menus');
+
+
+    //カスタム投稿機能の追加と定義
+    function create_post_type() {
+        register_post_type( 'item', [ // 投稿タイプ名
+            'labels' => [
+                'name'          => '商品', // 管理画面上で表示する投稿タイプ名
+                'singular_name' => 'item',    // カスタム投稿の識別名
+            ],
+            'public'        => true,  // 投稿タイプをpublicにする
+            'has_archive'   => true, // アーカイブ機能ON
+            'menu_position' => 5,     // 管理画面上での配置場所
+            'menu_icon'     => 'dashicons-store', //管理画面右側のバーにつくアイコン設定
+            'hierarchical'  => true,
+            'supports'      => [
+                'title',
+                'editor',
+                'thumbnail',
+                'page-attributes'
+            ],
+            ]);
+        }
+    add_action( 'init', 'create_post_type' );
+
+
     function hamburger_title( $title ) {
         if ( is_front_page() && is_home() ) {
             $title = get_bloginfo( 'name', 'display' );
@@ -13,6 +46,8 @@
         }
     add_filter( 'pre_get_document_title', 'hamburger_title' );
 
+
+    //CSSやJSはfunctions.phpで読み込む
     function hamburger_script() {
         wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.7.0' );
         wp_enqueue_style( 'hamburger', get_template_directory_uri() . '/scss/hamburger.css', array(), '1.0.0' );
@@ -21,14 +56,8 @@
     }
     add_action( 'wp_enqueue_scripts', 'hamburger_script' );
 
-    function register_hamburger_menus(){
-        register_nav_menus( array(
-            'side-menu' => 'SideMenu',
-            'footer-menu' => 'FooterMenu',
-        ));
-    }
-    add_action( 'after_setup_theme', 'register_hamburger_menus');
 
+    //ウィジェット機能の追加と定義
     function hamburger_widgets_init() {
         register_sidebar (
             array(
@@ -43,7 +72,9 @@
         );
     }
     add_action( 'widgets_init', 'hamburger_widgets_init' );
-    
+
+
+    //ページネーション機能追加と定義
     function the_pagination() {
         global $wp_query; //$wp_queryとはWordPressがページ読み込む時にデータベースから自動的に取得したさまざまなデータの集まりが格納されている変数
                           //その変数にアクセスしたいのでglobalでグローバル宣言をする
@@ -83,4 +114,5 @@
         ) );
         echo '</nav>'; //中身出力終わったら閉じタグ出しといて
     }
+
       
