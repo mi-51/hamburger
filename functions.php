@@ -24,6 +24,9 @@
             'has_archive'   => true, // アーカイブ機能ON
             'menu_position' => 5,     // 管理画面上での配置場所
             'menu_icon'     => 'dashicons-store', //管理画面右側のバーにつくアイコン設定
+            'taxonomies'    => [
+                'item_cat'
+            ],
             'hierarchical'  => true,
             'supports'      => [
                 'title',
@@ -31,6 +34,15 @@
                 'thumbnail',
                 'page-attributes'
             ],
+            ]);
+
+        register_taxonomy( 'item_cat', 'item', [
+            'labels' => [
+                'name'          => '商品カテゴリー',
+                'edit_item'     =>'商品カテゴリーを編集',
+            ],
+            'public' => true, 
+            'hierarchical' => true, 
             ]);
         }
     add_action( 'init', 'create_post_type' );
@@ -70,6 +82,64 @@
                 'after_title'   => "</h2>\n",
             )
         );
+            
+        //ウィジェットのカテゴリーにカスタム投稿カテゴリーを表示させる機能の追加
+        class WP_Widget_Categories_Taxonomy extends WP_Widget_Categories {
+            private $taxonomy = 'category';
+        
+            public function widget( $args, $instance ) {
+                if ( !empty( $instance['taxonomy'] ) ) {
+                    $this->taxonomy = $instance['taxonomy'];
+                }
+        
+                add_filter( 'widget_categories_dropdown_args', array( $this, 'add_taxonomy_dropdown_args' ), 10 );
+                add_filter( 'widget_categories_args', array( $this, 'add_taxonomy_dropdown_args' ), 10 );
+                parent::widget( $args, $instance );
+            }
+        
+            public function update( $new_instance, $old_instance ) {
+                $instance = parent::update( $new_instance, $old_instance );
+                $taxonomies = $this->get_taxonomies();
+                $instance['taxonomy'] = 'category';
+                if ( in_array( $new_instance['taxonomy'], $taxonomies ) ) {
+                    $instance['taxonomy'] = $new_instance['taxonomy'];
+                }
+                return $instance;
+            }
+        
+            public function form( $instance ) {
+                parent::form( $instance );
+                $taxonomy = 'category';
+                if ( !empty( $instance['taxonomy'] ) ) {
+                    $taxonomy = $instance['taxonomy'];
+                }
+                $taxonomies = $this->get_taxonomies();
+                ?>
+                <p>
+                    <label for="<?php echo $this->get_field_id( 'taxonomy' ); ?>"><?php _e( 'Taxonomy:' ); ?></label><br />
+                    <select id="<?php echo $this->get_field_id( 'taxonomy' ); ?>" name="<?php echo $this->get_field_name( 'taxonomy' ); ?>">
+                        <?php foreach ( $taxonomies as $value ) : ?>
+                        <option value="<?php echo esc_attr( $value ); ?>"<?php selected( $taxonomy, $value ); ?>><?php echo esc_attr( $value ); ?></option>
+                        <?php endforeach; ?>
+                    </select>
+                </p>
+                <?php
+            }
+        
+            public function add_taxonomy_dropdown_args( $cat_args ) {
+                $cat_args['taxonomy'] = $this->taxonomy;
+                return $cat_args;
+            }
+        
+            private function get_taxonomies() {
+                $taxonomies = get_taxonomies( array(
+                    'public' => true,
+                ) );
+                return $taxonomies;
+            }
+        }
+        unregister_widget( 'WP_Widget_Categories' );
+        register_widget( 'WP_Widget_Categories_Taxonomy' );
     }
     add_action( 'widgets_init', 'hamburger_widgets_init' );
 

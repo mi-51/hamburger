@@ -10,8 +10,8 @@
                             <div class="p-menu-card__intro--custom">
                                 <h1><?php the_title(); ?></h1>
                                 <div class="p-menu-card__info">
-                                    <p>価格：円</p>
-                                    <p>アレルギー：</p>
+                                    <p>価格：<?php $price = get_post_meta(get_the_ID(  ), '価格', true); ?><?php echo $price; ?>円</p>
+                                    <p>アレルギー：<?php $allergie = get_post_meta(get_the_ID(  ), 'アレルギー', true); ?><?php echo $allergie; ?></p>
                                 </div>
                             </div>
                         </div>
