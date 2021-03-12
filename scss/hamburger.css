@@ -408,10 +408,6 @@ input, select {
           flex-direction: column;
 }
 
-.l-footer__section {
-  padding-top: 43px;
-}
-
 .l-footer__section ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -420,6 +416,7 @@ input, select {
 
 .l-footer__section ul li {
   position: relative;
+  padding: 43px 10px;
 }
 
 .l-footer__section ul li::before {
@@ -438,11 +435,6 @@ input, select {
 .l-footer__section ul li a {
   color: #fff;
   font-size: 20px;
-  padding: 43px 10px;
-}
-
-.l-footer p {
-  padding-top: 39px;
 }
 
 .l-footer p small {
@@ -571,7 +563,7 @@ input, select {
 }
 
 .p-branch-menu {
-  height: 1500px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -599,7 +591,7 @@ input, select {
 .p-branch-menu__wrap {
   position: relative;
   height: 1200px;
-  margin: 120px 60px;
+  margin: 80px 40px;
   width: 50%;
   background-size: cover;
 }
@@ -1146,6 +1138,9 @@ input, select {
   display: -ms-flexbox;
   display: flex;
   padding-left: 86px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 599px) {
@@ -1171,7 +1166,7 @@ input, select {
 
 .p-mainvisual__text p {
   color: #fff;
-  font-size: 16px;
+  font-size: 28px;
   padding-left: 20px;
   padding-top: 10px;
 }

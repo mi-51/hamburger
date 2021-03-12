@@ -73,9 +73,9 @@
     function hamburger_widgets_init() {
         register_sidebar (
             array(
-                'name'          => 'All Menu',
+                'name'          => 'サイドバー',
                 'id'            => 'menu_widget',
-                'description'   => 'メニューの一覧です',
+                'description'   => 'サイドバーに表示する項目',
                 'before_widget' => '<div id="%1$s" class="widget %2$s">',
                 'after_widget'  => '</div>',
                 'before_title'  => '<h2 class="c-category-title">',

@@ -6,11 +6,11 @@
     align-items: center;
     flex-direction: column;
     &__section{
-        padding-top: 43px;
         ul{
             display: flex;
             li{
                 position: relative;
+                padding: 43px 10px;
                 &::before{
                     position: absolute;
                     left: 0;
@@ -27,13 +27,11 @@
                 a{
                     color: #fff;
                     font-size: 20px;
-                    padding: 43px 10px;
                 }
             }
         }
     }
     p{
-        padding-top: 39px;
         small{
         color: #fff;
         font-size: 14px;

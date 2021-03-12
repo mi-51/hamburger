@@ -9,8 +9,7 @@
             else:
         ?>
         <div class="widget">
-            <h2>No Widget</h2>
-            <p>ウィジットは設定されていません。</p>
+            <p>ウィジット設定なし</p>
         </div>
         <?php endif; ?>
     </div>

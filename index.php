@@ -9,7 +9,7 @@
                 
                 <div class="p-branch-menu">
                     <div class="p-branch-menu__wrap takeout">
-                        <a href="#">
+                        <a href="<?php echo esc_url(get_page_link(178)); ?>">
                             <h2>Take Out</h2>
                         </a>
                         <div class="p-box">
@@ -25,7 +25,7 @@
                     </div>
 
                     <div class="p-branch-menu__wrap eatin">
-                        <a href="#">
+                        <a href="<?php echo esc_url(get_page_link(181)); ?>">
                             <h2>Eat In</h2>
                         </a>
                         <div class="p-box">
