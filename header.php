@@ -8,6 +8,7 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
     <header class="l-header">
         <div class="l-header__top p-bar">
             <button class="p-bar__button">Menu</button>

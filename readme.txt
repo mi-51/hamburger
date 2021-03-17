@@ -1,4 +1,4 @@
-/*
+=== Hamburger ===
 Theme Name: Hamburger
 Description: ハンバーガーサイト
 Version: 1.0.0
@@ -9,6 +9,3 @@ Tags: right-sidebar, blog
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: hamburger
-Tested up to: 5.7
-Requires PHP: 7.3.5
-*/

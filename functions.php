@@ -1,7 +1,9 @@
 <?php
-    add_theme_support( 'menus' );
     add_theme_support( 'title-tag' );
     add_theme_support( 'post-thumbnails' );
+    add_theme_support( 'automatic-feed-links' );
+    add_theme_support( 'custom-header' );
+    add_theme_support( "custom-background");
 
     //メニュー機能の追加と定義
     function register_hamburger_menus(){
@@ -11,41 +13,6 @@
         ));
     }
     add_action( 'after_setup_theme', 'register_hamburger_menus');
-
-
-    //カスタム投稿機能の追加と定義
-    function create_post_type() {
-        register_post_type( 'item', [ // 投稿タイプ名
-            'labels' => [
-                'name'          => '商品', // 管理画面上で表示する投稿タイプ名
-                'singular_name' => 'item',    // カスタム投稿の識別名
-            ],
-            'public'        => true,  // 投稿タイプをpublicにする
-            'has_archive'   => true, // アーカイブ機能ON
-            'menu_position' => 5,     // 管理画面上での配置場所
-            'menu_icon'     => 'dashicons-store', //管理画面右側のバーにつくアイコン設定
-            'taxonomies'    => [
-                'item_cat'
-            ],
-            'hierarchical'  => true,
-            'supports'      => [
-                'title',
-                'editor',
-                'thumbnail',
-                'page-attributes'
-            ],
-            ]);
-
-        register_taxonomy( 'item_cat', 'item', [
-            'labels' => [
-                'name'          => '商品カテゴリー',
-                'edit_item'     =>'商品カテゴリーを編集',
-            ],
-            'public' => true, 
-            'hierarchical' => true, 
-            ]);
-        }
-    add_action( 'init', 'create_post_type' );
 
 
     function hamburger_title( $title ) {
@@ -65,6 +32,9 @@
         wp_enqueue_style( 'hamburger', get_template_directory_uri() . '/scss/hamburger.css', array(), '1.0.0' );
         wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', array(), '1.0.0' );
         wp_enqueue_script( 'toggle', get_template_directory_uri() . '/js/script.js', array('jquery'), '1.0.0', true);
+        if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+            wp_enqueue_script( 'comment-reply' );
+        }    
     }
     add_action( 'wp_enqueue_scripts', 'hamburger_script' );
 
@@ -116,10 +86,10 @@
                 $taxonomies = $this->get_taxonomies();
                 ?>
                 <p>
-                    <label for="<?php echo $this->get_field_id( 'taxonomy' ); ?>"><?php _e( 'Taxonomy:' ); ?></label><br />
+                    <label for="<?php echo $this->get_field_id( 'taxonomy' ); ?>"><?php _e( 'Taxonomy:','hamburger' ); ?></label><br />
                     <select id="<?php echo $this->get_field_id( 'taxonomy' ); ?>" name="<?php echo $this->get_field_name( 'taxonomy' ); ?>">
                         <?php foreach ( $taxonomies as $value ) : ?>
-                        <option value="<?php echo esc_attr( $value ); ?>"<?php selected( $taxonomy, $value ); ?>><?php echo esc_attr( $value ); ?></option>
+                        <option value="<?php echo esc_html( $value ); ?>"<?php selected( $taxonomy, $value ); ?>><?php echo esc_html( $value ); ?></option>
                         <?php endforeach; ?>
                     </select>
                 </p>
@@ -144,8 +114,15 @@
     add_action( 'widgets_init', 'hamburger_widgets_init' );
 
 
+    //エディタのスタイル機能
+    function wpdocs_theme_add_editor_styles() {
+        add_editor_style( 'custom-editor-style.css' );
+    }
+    add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );
+
+
     //ページネーション機能追加と定義
-    function the_pagination() {
+    function the_pagenation() {
         global $wp_query; //$wp_queryとはWordPressがページ読み込む時にデータベースから自動的に取得したさまざまなデータの集まりが格納されている変数
                           //その変数にアクセスしたいのでglobalでグローバル宣言をする
         $big = 999999999; //URLを変換するときに使う。ありえない数字にしておけばOK
@@ -184,5 +161,7 @@
         ) );
         echo '</nav>'; //中身出力終わったら閉じタグ出しといて
     }
+
+    if ( ! isset( $content_width ) ) $content_width = 1920;
 
       

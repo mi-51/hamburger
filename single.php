@@ -8,7 +8,13 @@
                 <div class="p-article">
                     <?php if(have_posts()): while(have_posts()): the_post(); ?>
                         <div id="post-<?php the_ID(); ?>"<?php post_class(); ?>>
+                            <div class="p-article-tag">
+                                <?php the_tags(); ?>
+                            </div>
                             <?php the_content(); ?>
+                            <div class="p-pagelink">
+                                <?php wp_link_pages( 'before=<p>&after=</p>&next_or_number=number&pagelink= %' ); ?>
+                            </div>
                         </div>
                     <?php endwhile; 
                     else:

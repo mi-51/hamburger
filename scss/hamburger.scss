@@ -36,6 +36,80 @@
 @import "./object/project/menu-card";
 @import "./object/project/contents";
 @import "./object/project/map";
+@import "./object/project/comments";
+@import "./object/project/pagelink";
+@import "./object/project/article-tag";
 // ====================================
 // utility
 // ====================================
+
+
+
+// ====================================
+// theme-check
+// ====================================
+.wp-caption, .gallery-caption{
+  font-size: 1.3rem;
+}
+
+.wp-caption-text{
+  margin-top: -20px;
+}
+
+.sticky {
+  padding: 10px;
+  border: solid 2px rgb(255, 192, 98);
+}
+
+.bypostauthor{
+  background-color: #fff7ef;
+}
+
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1rem;
+}
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1rem;
+}
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #eee;
+	clip: auto !important;
+	clip-path: none;
+	color: #444;
+	display: block;
+	font-size: 1em;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
