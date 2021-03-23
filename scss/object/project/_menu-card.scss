@@ -3,6 +3,9 @@
     padding: 0 100px 30px;
     height: auto;
     width: 100%;
+    @include pc{
+        max-height: 400px;
+    }
     @include tab{
         padding: 20px 40px;
     }
@@ -11,10 +14,12 @@
         padding: 20px;
     }
     img{
+        max-height: 400px;
         width: 43%;
         height: auto;
         object-fit: cover;
         @include sp{
+            height: 200px;
             width: 100%;
         }
     }
@@ -27,6 +32,7 @@
             padding: 33px;
         }
         @include sp{
+            width: 100%;
             padding: 40px 20px;
         }
         h3{

@@ -34,7 +34,7 @@
 
 
             <div class="p-pagenation--pc p-pagenation--tab">
-                <?php if( function_exists("the_pagination") ) the_pagination(); ?>
+                <?php if( function_exists("the_pagenation") ) the_pagenation(); ?>
             </div>
         </div>
     </div>

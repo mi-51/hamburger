@@ -8,7 +8,7 @@
                 dynamic_sidebar( 'menu_widget' );
             else:
         ?>
-        <div class="widget">
+        <div class="nowidget--100pc">
             <p>ウィジット設定なし</p>
         </div>
         <?php endif; ?>

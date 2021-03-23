@@ -1186,6 +1186,12 @@ input, select {
   width: 100%;
 }
 
+@media (min-width: 1201px) {
+  .p-menu-card {
+    max-height: 400px;
+  }
+}
+
 @media (max-width: 1200px) {
   .p-menu-card {
     padding: 20px 40px;
@@ -1203,6 +1209,7 @@ input, select {
 }
 
 .p-menu-card img {
+  max-height: 400px;
   width: 43%;
   height: auto;
   -o-object-fit: cover;
@@ -1211,6 +1218,7 @@ input, select {
 
 @media (max-width: 599px) {
   .p-menu-card img {
+    height: 200px;
     width: 100%;
   }
 }
@@ -1230,6 +1238,7 @@ input, select {
 
 @media (max-width: 599px) {
   .p-menu-card__intro {
+    width: 100%;
     padding: 40px 20px;
   }
 }

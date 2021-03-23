@@ -128,7 +128,7 @@
         $big = 999999999; //URLを変換するときに使う。ありえない数字にしておけばOK
         if ( $wp_query->max_num_pages <= 1 ) //もし最大ページ数が1以下(ページネーションの必要がない)であれば、
             return; //何もしないで。
-        echo '<nav class="pagination">'; //ページ数が2以上であれば<nav class="pagination">を出力して。
+        echo '<nav class="pagenation">'; //ページ数が2以上であれば<nav class="pagination">を出力して。
         echo paginate_links( array( //中身はこんな感じで出力しといて
             'base'         => str_replace( $big, '%#%', esc_url( get_pagenum_link($big) ) ),
                 //baseパラメータはページ番号付きのリンクを作るために使われるベースの URLを指定
