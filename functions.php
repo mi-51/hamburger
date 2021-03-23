@@ -1,12 +1,12 @@
 <?php
-    add_theme_support( 'title-tag' );
-    add_theme_support( 'post-thumbnails' );
-    add_theme_support( 'automatic-feed-links' );
-    add_theme_support( 'custom-header' );
-    add_theme_support( "custom-background");
-
     //メニュー機能の追加と定義
     function register_hamburger_menus(){
+        add_theme_support( 'title-tag' );
+        add_theme_support( 'post-thumbnails' );
+        add_theme_support( 'automatic-feed-links' );
+        add_theme_support( 'custom-header' );
+        add_theme_support( "custom-background");
+    
         register_nav_menus( array(
             'footer-menu' => 'FooterMenu',
             'header-menu' => 'HeaderMenu',
