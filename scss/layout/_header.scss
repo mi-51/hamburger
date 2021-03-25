@@ -41,6 +41,7 @@
         &__right{
             margin-right: 1.8rem;
             @include sp{
+                text-align: center;
                 margin: 0 auto;
             }
         }

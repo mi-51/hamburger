@@ -10,7 +10,7 @@
            width: 396px;
        }
        @include sp{
-           width: 70%;
+           width: 270px;
        }
     }
     &__button{
@@ -25,7 +25,7 @@
             width: 196px;
         }
         @include sp{
-            width: 25%;
+            width: 100px;
         }
     }
 }
